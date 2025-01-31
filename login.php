@@ -3,7 +3,7 @@ session_start();
 
 include 'koneksi.php';
 
-if ($_SESSION['stat_login'] == true) {
+if (isset($_SESSION['stat_login']) and $_SESSION['stat_login'] == true) {
 	header("Location:beranda.php");
 }
 
