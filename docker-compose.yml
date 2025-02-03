@@ -17,12 +17,14 @@ services:
       dockerfile: Dockerfile
     volumes:
       - .:/var/www/html
+      - ./config/php/php.ini:/usr/local/etc/php/conf.d/php.ini
     networks:
       - ppdb
 
   db:
     container_name: ppdb-db
     image: mariadb
+    command: --max_allowed_packet=32505856
     restart: always
     env_file:
       - .env
