@@ -55,7 +55,7 @@ CREATE TABLE `tb_pendaftaran` (
   `tempat_lahir` varchar(150) NOT NULL,
   `tanggal_lahir` date NOT NULL,
   `jenis_kelamin` enum('Laki-laki','Perempuan') NOT NULL,
-  `agama` varchar(15) NOT NULL,
+  `agama` varchar(30) NOT NULL,
   `status_dalam_keluarga` varchar(15) NOT NULL,
   `anak_ke` varchar(15) NOT NULL,
   `alamat` text NOT NULL,

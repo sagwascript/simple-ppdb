@@ -132,35 +132,35 @@ if (isset($_POST['submit'])) {
 						<td>Nama Lengkap</td>
 						<td>:</td>
 						<td>
-							<input type="text" name="nama" class="input-control">
+							<input type="text" name="nama" class="input-control" required>
 						</td>
 					</tr>
 					<tr>
 						<td>NISN (Nomor Induk Siswa Nasional)</td>
 						<td>:</td>
 						<td>
-							<input type="text" name="nisn" class="input-control">
+							<input type="text" name="nisn" class="input-control" required>
 						</td>
 					</tr>
 					<tr>
 						<td>Tempat Lahir</td>
 						<td>:</td>
 						<td>
-							<input type="text" name="tempat_lahir" class="input-control">
+							<input type="text" name="tempat_lahir" class="input-control" required>
 						</td>
 					</tr>
 					<tr>
 						<td>Tanggal Lahir</td>
 						<td>:</td>
 						<td>
-							<input type="date" name="tanggal_lahir" class="input-control">
+							<input type="date" name="tanggal_lahir" class="input-control" required>
 						</td>
 					</tr>
 					<tr>
 						<td>Jenis Kelamin</td>
 						<td>:</td>
 						<td>
-							<input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki
+							<input type="radio" name="jenis_kelamin" value="Laki-laki" checked> Laki-laki
 							<input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
 						</td>
 					</tr>
@@ -168,7 +168,7 @@ if (isset($_POST['submit'])) {
 						<td>Agama</td>
 						<td>:</td>
 						<td>
-							<select class="input-control" name="agama">
+							<select class="input-control" name="agama" required>
 								<option value="">--Pilih Agama Anda--</option>
 								<option value="Islam">Islam</option>
 								<option value="Kristen Protestan">Kristen Protestan</option>
@@ -183,7 +183,7 @@ if (isset($_POST['submit'])) {
 						<td>Status Dalam Keluarga</td>
 						<td>:</td>
 						<td>
-							<select class="input-control" name="status_dalam_keluarga">
+							<select class="input-control" name="status_dalam_keluarga" required>
 								<option value="">--Pilih Status dalam Keluarga--</option>
 								<option value="Anak Kandung">Anak Kandung</option>
 								<option value="Anak Angkat">Anak Angkat</option>
@@ -194,7 +194,7 @@ if (isset($_POST['submit'])) {
 						<td>Anak Ke-</td>
 						<td>:</td>
 						<td>
-							<select class="input-control" name="anak_ke">
+							<select class="input-control" name="anak_ke" required>
 								<option value="">--Pilih--</option>
 								<option value="1">1</option>
 								<option value="2">2</option>
@@ -209,84 +209,84 @@ if (isset($_POST['submit'])) {
 						<td>Alamat Lengkap</td>
 						<td>:</td>
 						<td>
-							<textarea class="input-control" name="alamat"></textarea>
+							<textarea class="input-control" name="alamat" required></textarea>
 						</td>
 					</tr>
 					<tr>
 						<td>Nomor WhatsApp (WA) Peserta Didik</td>
 						<td>:</td>
 						<td>
-							<input type="text" name="no_wa" class="input-control">
+							<input type="text" name="no_wa" class="input-control" required>
 						</td>
 					</tr>
 					<tr>
 						<td>Email Aktif</td>
 						<td>:</td>
 						<td>
-							<input type="email" name="email" class="input-control">
+							<input type="email" name="email" class="input-control" required>
 						</td>
 					</tr>
 					<tr>
 						<td>NIK (Nomor Induk Kependudukan) Siswa</td>
 						<td>:</td>
 						<td>
-							<input type="text" name="nik" class="input-control">
+							<input type="text" name="nik" class="input-control" required>
 						</td>
 					</tr>
 					<tr>
 						<td>Nomor Kartu Keluarga (KK)</td>
 						<td>:</td>
 						<td>
-							<input type="text" name="no_kk" class="input-control">
+							<input type="text" name="no_kk" class="input-control" required>
 						</td>
 					</tr>
 					<tr>
 						<td>Tanggal Terbit Kartu Keluarga (KK)</td>
 						<td>:</td>
 						<td>
-							<input type="date" name="tanggal_terbit_kk" class="input-control">
+							<input type="date" name="tanggal_terbit_kk" class="input-control" required>
 						</td>
 					</tr>
 					<tr>
 						<td>Nama Sekolah Asal</td>
 						<td>:</td>
 						<td>
-							<input type="text" name="sekolah_asal" class="input-control">
+							<input type="text" name="sekolah_asal" class="input-control" required>
 						</td>
 					</tr>
 					<tr>
 						<td>NPSN Sekolah Asal</td>
 						<td>:</td>
 						<td>
-							<input type="text" name="npsn_sekolah_asal" class="input-control">
+							<input type="text" name="npsn_sekolah_asal" class="input-control" required>
 						</td>
 					</tr>
 					<tr>
 						<td>Nama Ayah/Wali</td>
 						<td>:</td>
 						<td>
-							<input type="text" name="nama_ayah" class="input-control">
+							<input type="text" name="nama_ayah" class="input-control" required>
 						</td>
 					</tr>
 					<tr>
 						<td>Nama Ibu</td>
 						<td>:</td>
 						<td>
-							<input type="text" name="nama_ibu" class="input-control">
+							<input type="text" name="nama_ibu" class="input-control" required>
 						</td>
 					</tr>
 					<tr>
 						<td>Foto 3x4</td>
 						<td>:</td>
 						<td>
-							<input class="input-control" type="file" name="foto" accept="image/*" />
+							<input class="input-control" type="file" name="foto" accept="image/*" required />
 						</td>
 					</tr>
 					<tr>
 						<td>Foto Kartu Keluarga</td>
 						<td>:</td>
 						<td>
-							<input class="input-control" type="file" name="foto_kk" accept="image/*" />
+							<input class="input-control" type="file" name="foto_kk" accept="image/*" required />
 						</td>
 					</tr>
 					<tr>
